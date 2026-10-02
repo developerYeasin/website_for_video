@@ -1,0 +1,53 @@
+- generic [ref=e5]:
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic [aria-hidden]:
+          - button [disabled]
+        - button "Facebook" [ref=e12] [cursor=pointer]:
+          - img "Facebook" [ref=e13]
+      - generic [ref=e18]:
+        - textbox "Email or phone" [ref=e21]
+        - textbox "Password" [ref=e24]
+        - button "Log in" [ref=e27] [cursor=pointer]
+        - link "Forgotten account?" [ref=e34] [cursor=pointer]:
+          - /url: https://www.facebook.com/recover/initiate?ars=royal_blue_bar
+  - generic [ref=e39]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - status [ref=e45]
+        - text: )
+      - generic [ref=e51]:
+        - status [ref=e52]
+        - generic [ref=e54]:
+          - status [ref=e55]
+          - status [ref=e56]
+      - generic [ref=e60]:
+        - status [ref=e62]
+        - status [ref=e64]
+        - status [ref=e66]
+      - generic [ref=e67]:
+        - status [ref=e68]
+        - text: )
+    - generic [ref=e70]:
+      - link [ref=e74] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e77]: Reels
+  - dialog [ref=e87]:
+    - button "Close" [ref=e89] [cursor=pointer]
+    - generic [ref=e96]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: Yea sent you a reel
+        - generic [ref=e109]: Log in to join them on Facebook.
+      - generic [ref=e115]:
+        - generic: Email address or phone number
+        - textbox "Email address or phone number" [active] [ref=e116]
+      - generic [ref=e121]:
+        - generic: Password
+        - textbox "Password" [ref=e122]
+      - button "Log in to Facebook" [ref=e124] [cursor=pointer]:
+        - generic [ref=e125]: Log in
+      - link "Forgotten password?" [ref=e129] [cursor=pointer]:
+        - /url: https://www.facebook.com/recover/initiate?ars=royal_blue_bar
+      - generic [ref=e131]: or
+      - button "Create new account" [ref=e140] [cursor=pointer]
