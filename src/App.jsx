@@ -2,6 +2,7 @@ import { NavLink, Route, Routes, useLocation, useNavigate } from 'react-router-d
 import { useEffect, useRef } from 'react'
 import Lenis from 'lenis'
 import { gsap, ScrollTrigger, LiquidFx, ToTop } from './effects'
+import Chrono from './pages/Chrono.jsx'
 import Studio from './pages/Studio.jsx'
 import Tea from './pages/Tea.jsx'
 import Skincare from './pages/Skincare.jsx'
@@ -45,7 +46,8 @@ export default function App() {
   return (
     <>
       <nav className="switcher">
-        <NavLink to="/" end onClick={go('/')}>Studio</NavLink>
+        <NavLink to="/" end onClick={go('/')}>Chronos</NavLink>
+        <NavLink to="/studio" onClick={go('/studio')}>Studio</NavLink>
         <NavLink to="/tea" onClick={go('/tea')}>Aurea Tea</NavLink>
         <NavLink to="/skincare" onClick={go('/skincare')}>Skincare</NavLink>
         <NavLink to="/aether" onClick={go('/aether')}>Aether</NavLink>
@@ -55,7 +57,8 @@ export default function App() {
       <LiquidFx />
       <ToTop key={pathname} />
       <Routes>
-        <Route path="/" element={<Studio />} />
+        <Route path="/" element={<Chrono />} />
+        <Route path="/studio" element={<Studio />} />
         <Route path="/tea" element={<Tea />} />
         <Route path="/skincare" element={<Skincare />} />
         <Route path="/aether" element={<Aether />} />
